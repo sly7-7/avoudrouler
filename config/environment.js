@@ -2,6 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
+    firebaseInstance: 'avoudrouler',
     modulePrefix: 'avoudrouler',
     environment: environment,
     baseURL: '/',

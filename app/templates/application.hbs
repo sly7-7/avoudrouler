@@ -1,3 +1,16 @@
-<h2 id='title'>Welcome to Ember.js</h2>
-
+<h1>Avoudrouler</h1>
+<h2>Le site du bike and run d'Avoudrey</h2>
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li>{{#link-to 'home'}}Accueil{{/link-to}}</li>
+        <li>{{#link-to 'description'}}Description{{/link-to}}</li>
+        <li>{{#link-to 'races'}}Epreuves{{/link-to}}</li>
+        <li>{{#link-to 'afterRace'}}L'après course{{/link-to}}</li>
+        <li>{{#link-to 'gallery'}}Gallerie{{/link-to}}</li>
+      </ul>
+    </div>
+  </div>
+</nav>
 {{outlet}}
