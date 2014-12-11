@@ -17,6 +17,19 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
+    },
+    contentSecurityPolicy: {
+      'default-src': "'none'",
+      'script-src': "'self' 'unsafe-eval'",
+      'font-src': "'self'",
+      'connect-src': "'self' https://auth.firebase.com wss://s-dal5-nss-20.firebaseio.com",
+      'img-src': "'self'",
+      'style-src': "'self'",
+      'media-src': "'self'"
+    },
+    torii: {
+      // a 'session' property will be injected on routes and controllers
+      sessionServiceName: 'session'
     }
   };
 
