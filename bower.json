@@ -1,9 +1,9 @@
 {
   "name": "avoudrouler",
   "dependencies": {
-    "handlebars": "~1.3.0",
+    "handlebars": "2.0.0",
     "jquery": "^1.11.1",
-    "ember": "1.8.1",
+    "ember": "beta",
     "ember-data": "components/ember-data#canary",
     "ember-resolver": "~0.1.10",
     "loader.js": "stefanpenner/loader.js#1.0.1",
