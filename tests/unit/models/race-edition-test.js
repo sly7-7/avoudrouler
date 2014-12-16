@@ -3,7 +3,7 @@ import {
   test
 } from 'ember-qunit';
 
-moduleForModel('race', 'Race', {
+moduleForModel('race-edition', 'Race edition', {
   // Specify the other units that are required for this test.
   needs: []
 });

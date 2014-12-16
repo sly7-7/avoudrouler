@@ -2,8 +2,15 @@
   <div class="row">
     <div class="col-xs-3">
       <ul class="nav nav-pills nav-stacked">
-      {{#each race in model}}
-        <li>{{#link-to 'race' race}}{{race.name}}{{/link-to}}</li>
+      {{#each raceType in model}}
+        <li>{{#link-to 'race-type' raceType}}{{raceType.name}}{{/link-to}}</li>
+        <li>
+          <ul class="nav nav-list">
+          {{#each raceType.raceEditions as |edition|}}
+            <li>{{#link-to 'race-edition' raceType edition}}{{edition.year}}{{/link-to}}</li>
+          {{/each}}
+          </ul>
+        </li>
       {{/each}}
       </ul>
     </div>

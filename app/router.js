@@ -6,10 +6,12 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('home');
+  this.route('home', {path: '/'});
   this.route('description');
   this.resource('races', function () {
-    this.resource('race', { path: ':race_name' });
+    this.resource('race-type', { path: ':race_type_id' }, function () {
+      this.resource('race-edition', { path: ':race_edition_id' });
+    });
   });
   this.route('afterRace');
   this.route('gallery');

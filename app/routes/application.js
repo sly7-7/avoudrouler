@@ -2,6 +2,6 @@ import Ember from "ember";
 
 export default Ember.Route.extend({
   model: function () {
-    return this.store.all('race-type');
+    return this.store.find('race-type');
   }
 });

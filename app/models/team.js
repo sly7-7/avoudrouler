@@ -3,8 +3,7 @@ import Ember from 'ember';
 
 export default DS.Model.extend({
   bibNumber: DS.attr(),
-  race: DS.belongsTo(),
+  raceEdition: DS.belongsTo(),
   players: DS.hasMany(),
   arrivalTimestamp: DS.attr()
-
 });
